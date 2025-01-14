@@ -15,20 +15,32 @@ const WalletItem = styled.li`
 const WalletButton = styled.button`
   display: flex;
   width: 100%;
-  justify-content: stretch;
+  justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
-  padding: 1.2rem;
-  margin: 0.3rem;
+  gap: 8px;
+  padding: 10px 12px;
+  margin-top: 8px;
+  background-color: #262626;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  
+  &:hover {
+    background-color: #3c3c3c;
+  }
 `
 
 const WalletIcon = styled.img`
-  height: 36px;
-  vertical-align: middle;
+  height: 24px;
+  width: 24px;
+  border-radius: 8px;
 `
 
 const WalletName = styled.span`
-  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 400;
 `
 
 type Props = {
